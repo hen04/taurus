@@ -1,10 +1,338 @@
 <!DOCTYPE html>
-html(lang="en")
-head
-  meta(charset="UTF-8")
-  meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  meta(http-equiv="X-UA-Compatible", content="ie=edge")
-  title Taurus
-  link(rel="stylesheet", href="css/taurus.css")
-body
-  | 1
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Taurus
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/slick.css")
+		link(rel="stylesheet", href="css/slick-theme.css")
+		link(rel="stylesheet", href="css/taurus.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+		script(src="js/jquery.maskedinput.min.js")
+		script(src="js/slick.min.js")
+		script(src="js/taurus.js")
+	body
+		.kitchen-first
+			.wrapper.header-info
+				.header-logo
+					img(src="img/logo.png", alt="")
+				.header-menu
+					ul
+						li
+							a(href="") Вызвать замерщика
+						li
+							a(href="") Планировка и расчет
+						li
+							a(href="") Сборка и доставка
+				.header-phone
+						span.phone 8 812 23-34-43
+						span.call-us Позвоните нам бесплатно!
+			.wrapper.kitchen-first__descr
+				h1 Кухни по индивидуальным размерам
+				p Изготовим мебель по индивидуальному проекту до 30% дешевле, чем другие компании-производители
+				form(action="/")
+					input(type="text" name="name" class="inp-order inp-name" placeholder="Ваше имя")
+					input(type="text" name="phone" class="inp-order inp-phone" placeholder="+7(___) ___ __ __")
+					button(type="submit" class="subm-order") Заказать
+		.wrapper.kitchen-info
+			.kitchen-info__item.kitchen-info--1
+				| Профессиональные монтажники с опытом работы от 5 лет
+			.kitchen-info__item.kitchen-info--2
+				| Работаем на современном оборудовании
+			.kitchen-info__item.kitchen-info--3
+				| Проектируем профессионально
+			.kitchen-info__item.kitchen-info--4
+				| Уделяем особое внимане к деталям
+			.kitchen-info__item.kitchen-info--5
+				| Используем качественые эко-материалы
+		.kitchen-implement
+			.wrapper
+				h2 Безграничные возможности комплектации кухонь
+				.kitchen-implement__list
+					.kitchen-implement__item
+						p Вариативность комбинаций комплектующих кухонь на заказ впечатляет. Сегодня рынок может предложить абсолютно любое решение по комплектации и дизайну мебели для кухни. Это многообразие достигается за счет множества составляющих, но лицом кухонной мебели всегда считались  фасады. Именно они наряду с фурнитурой задают стиль, настроение и бюджет.
+					.kitchen-implement__item
+						p В зависимости от типа фасадов все кухни условно делятся на кухни в  современном и классическом стиле. Классический дизайн - самый популярный и востребованный стиль, для которого характерно сочетание натуральных материалов и естественных расцветок. Он отличается законченностью форм, симметричностью и четкостью линий. 
+					.kitchen-implement__item
+						p Причем, под классикой подразумеваются любые традиционные кухни, включая кантри, прованс и английский стиль. Характерный классический стиль фасадам придает фрезеровка, поэтому под классические фасады обычно используется основа из натурального дерева или МДФ. По своей конструкции кухонные фасады бывают двух видов: цельные и рамочные
+		.wrapper
+			.kitchen-face
+				.kitchen-face__item
+					.kitchen-face__img
+						img(src="img/face-1.jpg", alt="")
+					.kitchen-face__descr
+						h3 Цельные фасады из массива или МДФ
+						p Встречаются в премиальных и элитных кухнях. Такие фасады экологичны, выглядят дорого, респектабельно и не подвержены влиянию изменчивой моды. Производители цельных фасадов обычно изготавливают в комплекте также и декоративные элементы: карнизы, пилястры, арки и балюстрады. 
+						p 
+							i Но они очень привередливы в уходе, со временем впитывают запахи и влагу, а при длительном воздействии солнечных лучей могут потускнеть
+				.kitchen-face__item
+					.kitchen-face__descr
+						h3 Рамочные кухонные фасады
+						p В классических гарнитурах среднего и эконом-класса зачастую используют именно рамочные фасады с филенкой. Наиболее распространенный вариант: рамка + филенка сделаны из МДФ, ламинированного ПВХ-пленкой. Для продления эксплуатационного срока фасадов поверх пленки наносится защитный матовый или глянцевый лак, либо  их красят по технологии Decаpe, которая придает кухне антикварный вид. 
+						p 
+							i Такие фасады отлично смотрятся, они гораздо практичнее и заметно дешевле по сравнению с цельными фасадами из массива.
+					.kitchen-face__img
+						img(src="img/face-2.jpg", alt="")
+		.kitchen-style
+			.wrapper
+				h2 Знакомство со стилистикой
+				ul.kitchen-style__menu
+					li.js-menu(data-style="klassika") Классический
+					li.js-menu(data-style="kantri") Кантри
+					li.js-menu(data-style="provans") Прованс
+					li.js-menu(data-style="english") Английский
+					li.js-menu(data-style="modern") Модерн
+			.kitchen-style__info
+				.kitchen-style__slider.kitchen-style--klassika
+					.kitchen-style__slider-item
+						img(src="img/style-1.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-2.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-3.jpg", alt="")
+				.kitchen-style__slider.kitchen-style--kantri
+					.kitchen-style__slider-item
+						img(src="img/style-3.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-2.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-1.jpg", alt="")
+				.kitchen-style__slider.kitchen-style--provans
+					.kitchen-style__slider-item
+						img(src="img/style-2.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-3.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-1.jpg", alt="")
+				.kitchen-style__slider.kitchen-style--english
+					.kitchen-style__slider-item
+						img(src="img/style-3.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-2.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-1.jpg", alt="")
+				.kitchen-style__slider.kitchen-style--modern
+					.kitchen-style__slider-item
+						img(src="img/style-3.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-2.jpg", alt="")
+					.kitchen-style__slider-item
+						img(src="img/style-1.jpg", alt="")
+		.kitchen-service.kitchen-service--price
+			.wrapper 
+				.kitchen-service__txt
+					h3 Хотите узнать точную цену?
+					p Позвоните нам или оставьте свой номер телефона. Наш консультант свяжется с вами в ближайшее время и в сжатые сроки предоставит информацию по стоимости интересующей вас мебели
+					form(action="/")
+						input(type="text" name="phone" class="inp-order inp-phone" placeholder="+7(___) ___ __ __")
+						button(type="submit" class="subm-order") Узнать цену
+				.kitchen-service__phone
+					.kitchen-service__phone-border
+						span.phone 8(812)-612-41-38
+						span.consultant Наш консультант Алексей
+		.kitchen-modern
+			.kitchen-modern__item
+				.kitchen-modern__header
+					p Глянцевые кухонные фасады
+				.kitchen-modern__txt
+					h3 Современные кухни
+					p Кухни, выполненные в современном стиле, не менее востребованы, чем классические кухни. Современный дизайн — это простота и изящество линий, минимализм и максимальная функциональность, эргономичность и удобство. И по-прежнему тон задают фасады. Основой под фасады для таких кухонь служат:
+				img(src="img/modern-1.jpg", alt="")
+			.kitchen-modern__item
+				.kitchen-modern__header
+					p Матовые кухонные фасады
+				.kitchen-modern__txt
+					h3 Современные кухни
+					p Кухни, выполненные в современном стиле, не менее востребованы, чем классические кухни. Современный дизайн — это простота и изящество линий, минимализм и максимальная функциональность, эргономичность и удобство. И по-прежнему тон задают фасады. Основой под фасады для таких кухонь служат:
+				img(src="img/modern-2.jpg", alt="")
+			.kitchen-modern__item
+				.kitchen-modern__header
+					p Глянцевые кухонные фасады
+				.kitchen-modern__txt
+					h3 Современные кухни
+					p Кухни, выполненные в современном стиле, не менее востребованы, чем классические кухни. Современный дизайн — это простота и изящество линий, минимализм и максимальная функциональность, эргономичность и удобство. И по-прежнему тон задают фасады. Основой под фасады для таких кухонь служат:
+				img(src="img/modern-3.jpg", alt="")
+		.wrapper
+			.kitchen-face
+				.kitchen-face__item
+					.kitchen-face__descr
+						h3 Фасады из ДСП
+						p Фасады из ДСП - самый бюджетный вариант, часто используются при изготовлении фасадов для офисных кухонь. Они быстро изготавливаются и устанавливаются, их поверхность устойчива к деформации, влаге, легко поддается чистке практически любыми моющими средствами. 
+						p 
+							i К недостаткам этого материала можно отнести исключительно ровные поверхности, не поддающиеся формовке и фрезеровке  из-за своей крупноволокнистой структуры.
+					.kitchen-face__img
+						img(src="img/face-3.jpg", alt="")
+				.kitchen-face__item
+					.kitchen-face__img
+						img(src="img/face-4.jpg", alt="")
+					.kitchen-face__descr
+						h3 Фасады из МДФ бывают двух видов
+						h4 Глянцевые кухонные фасады
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ. На основу с помощью современных технологий наносятся акриловые красители с последующей полировкой и лаки либо высокоглянцевае пленки. Такие фасадные полотна отличаются большой гаммой различных цветов и оттенков и разными эффектами окраски.
+				.kitchen-face__item
+					.kitchen-face__descr
+						h4 Облицованные пленкой ПВХ или пластиком
+						p Фасады из  МДФ  облицованы ламинированной пленкой ПВХ или  пластиком. Пластик к тому же не требует специального ухода, устойчив к истиранию, царапинам, к воздействию различных бытовых химических веществ, а также высоких температур.
+					.kitchen-face__img
+						img(src="img/face-5.jpg", alt="")
+		.kitchen-detail
+			h2 Ваша кухня в деталях
+			.kitchen-detail__list
+				span.kitchen-detail__item.kitchen-detail--furnitura.js-detail(data-info="furnitura") Фурнитура
+				span.kitchen-detail__item.kitchen-detail--kreplenia.js-detail(data-info="kreplenia") Крепления
+				span.kitchen-detail__item.kitchen-detail--podsvetka.js-detail(data-info="podsvetka") Подсветка
+				span.kitchen-detail__item.kitchen-detail--reiling.js-detail(data-info="reiling") Рейлинг крепления
+				span.kitchen-detail__item.kitchen-detail--rakoviny.js-detail(data-info="rakoviny") Раковины
+				span.kitchen-detail__item.kitchen-detail--razdvizhnye.js-detail(data-info="razdvizhnye") Раздвижные конструкции
+				span.kitchen-detail__item.kitchen-detail--vydvizhnye.js-detail(data-info="vydvizhnye") Выдвижные ящики
+				span.kitchen-detail__item.kitchen-detail--vytiazhki.js-detail(data-info="vytiazhki") Вытяжки
+				span.kitchen-detail__item.kitchen-detail--rabochie.js-detail(data-info="rabochie") Рабочие поверхности
+				span.kitchen-detail__item.kitchen-detail--duhovki.js-detail(data-info="duhovki") Духовки
+				span.kitchen-detail__item.kitchen-detail--vydvizhnye-kreplenia.js-detail(data-info="vydvizhnye-kreplenia") Выдвижные крепления
+				span.kitchen-detail__item.kitchen-detail--yashiki.js-detail(data-info="yashiki") Доп.ящики
+			.kitchen-detail__info
+				.kitchen-detail__close.js-close
+				.kitchen-detail__info-item.kitchen-detail--info-furnitura
+					img(src="img/detail-furnitura.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Функциональность
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-kreplenia
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Крепления
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-podsvetka
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Подсветка
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-reiling
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Рейлинг
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-rakoviny
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Раковины
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-razdvizhnye
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Раздвижные
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-vydvizhnye
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Выдвижные
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-vytiazhki
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Вытяжки
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-rabochie
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Рабочие
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-duhovki
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Духовки
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-vydvizhnye-kreplenia
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Выдвижные крепления
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+				.kitchen-detail__info-item.kitchen-detail--info-yashiki
+					img(src="img/detail-kreplenia.jpg", alt="")
+					.kitchen-detail__txt
+						h4 Ящики
+						p Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.
+			.kitchen-detail__img
+		.wrapper
+			.kitchen-material
+				h2 Материалы для кухни
+				.kitchen-material__list
+					.kitchen-material__item.kitchen-material--1
+						.kitchen-material__header
+							h3 Корпус ЛДСП
+							p от 3 000 руб.
+					.kitchen-material__item.kitchen-material--2
+						.kitchen-material__header
+							h3 Фасады МДФ цельные и рамочные
+							p от 2 000 руб.
+					.kitchen-material__item.kitchen-material--3
+						ul.kitchen-material__info
+							li — Стекло (матовое, прозрачное, цветное, фотопечать)
+							li — Высокоглянцевые панели на основе МДФ
+							li — Зеркало (серебро, бронза, художественное матирование)	
+							li — Алюминиевые рамочные профили для раздвижных фасадов
+						.kitchen-material__header
+							h3 Вставки в рамочные фасады и профили
+							p от 1 000 руб.
+					.kitchen-material__item.kitchen-material--4
+						.kitchen-material__header
+							h3 Кромка
+							p от 1 000 руб.
+					.kitchen-material__item.kitchen-material--5
+						.kitchen-material__header
+							h3 Фурнитура
+							p от 500 руб.				
+		.kitchen-economy
+			.wrapper
+				h2 Наши возможности для Вашей экономии:
+				.kitchen-economy__list 
+					.kitchen-economy__item
+						span.price-1 до
+						span.price-2 30%
+						span.price-3 дешевле
+						p
+							i За счет: Собственной фабрики мебели и производства фурнитуры
+					.kitchen-economy__item
+						h4 Собственная фабрика:
+						ul
+							li
+								span Евро-оборудование
+								| Стандарты DIN, EN, ISO
+							li 
+								span Все виды материалов
+								| Работа с эконом. и премиум материалами
+							li 
+								span Фурнитура на выбор
+								| Сделам мебель под конкретные задачи
+					.kitchen-economy__item
+						h4 Сделаем точную копию мебели:
+						p 
+							a(href="") Пришлите нам фото или ссылку
+							|  и мы сделаем точно такую же мебель, но гораздо дешевле
+						button Не верю, докажите!
+		.kitchen-service.kitchen-service--service
+			.wrapper
+				.kitchen-service__txt
+					h3 Закажите услугу выезда специалиста на дом
+					p Он разработает индивидуальный проект, впишет его в интерьер, предоставит смету. 
+					form(action="/")
+						input(type="text" name="phone" class="inp-order inp-phone" placeholder="+7(___) ___ __ __")
+						button(type="submit" class="subm-order") Узнать цену
+				.kitchen-service__phone
+					.kitchen-service__phone-border
+						span.phone 8(812)-612-41-38
+						span.consultant Дизайнер-конструктор Алексей
+		.kitchen-footer
+			.wrapper
+				.kitchen-footer__info
+					.kitchen-footer__logo
+						img(src="img/logo-footer.png", alt="")
+					.kitchen-footer__phone
+						span.phone 8 812 23-34-43
+						span.call-us Позвоните нам бесплатно!
+					.kitchen-footer__txt 
+						p Предоставленная на сайте информация является собственностью «Таурус мебель» холдинга «Таурус» Любое использование материалов без одобрения администрации - запрещено.
+				.kitchen-footer__copyright
+					p 1994-2016 &copy; Бренд пренадлежит холдингу «ТАУРУС» Санкт-Петербург

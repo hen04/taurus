@@ -1,10 +1,369 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Taurus</title>
-  <link rel="stylesheet" href="css/taurus.css"/>
-</head>
-<body>1</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Taurus</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/taurus.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/taurus.js"></script>
+  </head>
+  <body>
+    <div class="kitchen-first">
+      <div class="wrapper header-info">
+        <div class="header-logo"><img src="img/logo.png" alt=""/></div>
+        <div class="header-menu">
+          <ul>
+            <li><a href="">Вызвать замерщика</a></li>
+            <li><a href="">Планировка и расчет</a></li>
+            <li><a href="">Сборка и доставка</a></li>
+          </ul>
+        </div>
+        <div class="header-phone"><span class="phone">8 812 23-34-43</span><span class="call-us">Позвоните нам бесплатно!</span></div>
+      </div>
+      <div class="wrapper kitchen-first__descr">
+        <h1>Кухни по индивидуальным размерам</h1>
+        <p>Изготовим мебель по индивидуальному проекту до 30% дешевле, чем другие компании-производители</p>
+        <form action="/">
+          <input type="text" name="name" placeholder="Ваше имя" class="inp-order inp-name"/>
+          <input type="text" name="phone" placeholder="+7(___) ___ __ __" class="inp-order inp-phone"/>
+          <button type="submit" class="subm-order">Заказать</button>
+        </form>
+      </div>
+    </div>
+    <div class="wrapper kitchen-info">
+      <div class="kitchen-info__item kitchen-info--1">Профессиональные монтажники с опытом работы от 5 лет</div>
+      <div class="kitchen-info__item kitchen-info--2">Работаем на современном оборудовании</div>
+      <div class="kitchen-info__item kitchen-info--3">Проектируем профессионально</div>
+      <div class="kitchen-info__item kitchen-info--4">Уделяем особое внимане к деталям</div>
+      <div class="kitchen-info__item kitchen-info--5">Используем качественые эко-материалы</div>
+    </div>
+    <div class="kitchen-implement">
+      <div class="wrapper">
+        <h2>Безграничные возможности комплектации кухонь</h2>
+        <div class="kitchen-implement__list">
+          <div class="kitchen-implement__item">
+            <p>Вариативность комбинаций комплектующих кухонь на заказ впечатляет. Сегодня рынок может предложить абсолютно любое решение по комплектации и дизайну мебели для кухни. Это многообразие достигается за счет множества составляющих, но лицом кухонной мебели всегда считались  фасады. Именно они наряду с фурнитурой задают стиль, настроение и бюджет.</p>
+          </div>
+          <div class="kitchen-implement__item">
+            <p>В зависимости от типа фасадов все кухни условно делятся на кухни в  современном и классическом стиле. Классический дизайн - самый популярный и востребованный стиль, для которого характерно сочетание натуральных материалов и естественных расцветок. Он отличается законченностью форм, симметричностью и четкостью линий. </p>
+          </div>
+          <div class="kitchen-implement__item">
+            <p>Причем, под классикой подразумеваются любые традиционные кухни, включая кантри, прованс и английский стиль. Характерный классический стиль фасадам придает фрезеровка, поэтому под классические фасады обычно используется основа из натурального дерева или МДФ. По своей конструкции кухонные фасады бывают двух видов: цельные и рамочные</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="kitchen-face">
+        <div class="kitchen-face__item">
+          <div class="kitchen-face__img"><img src="img/face-1.jpg" alt=""/></div>
+          <div class="kitchen-face__descr">
+            <h3>Цельные фасады из массива или МДФ</h3>
+            <p>Встречаются в премиальных и элитных кухнях. Такие фасады экологичны, выглядят дорого, респектабельно и не подвержены влиянию изменчивой моды. Производители цельных фасадов обычно изготавливают в комплекте также и декоративные элементы: карнизы, пилястры, арки и балюстрады. </p>
+            <p> <i>Но они очень привередливы в уходе, со временем впитывают запахи и влагу, а при длительном воздействии солнечных лучей могут потускнеть</i></p>
+          </div>
+        </div>
+        <div class="kitchen-face__item">
+          <div class="kitchen-face__descr">
+            <h3>Рамочные кухонные фасады</h3>
+            <p>В классических гарнитурах среднего и эконом-класса зачастую используют именно рамочные фасады с филенкой. Наиболее распространенный вариант: рамка + филенка сделаны из МДФ, ламинированного ПВХ-пленкой. Для продления эксплуатационного срока фасадов поверх пленки наносится защитный матовый или глянцевый лак, либо  их красят по технологии Decаpe, которая придает кухне антикварный вид. </p>
+            <p> <i>Такие фасады отлично смотрятся, они гораздо практичнее и заметно дешевле по сравнению с цельными фасадами из массива.</i></p>
+          </div>
+          <div class="kitchen-face__img"><img src="img/face-2.jpg" alt=""/></div>
+        </div>
+      </div>
+    </div>
+    <div class="kitchen-style">
+      <div class="wrapper">
+        <h2>Знакомство со стилистикой</h2>
+        <ul class="kitchen-style__menu">
+          <li data-style="klassika" class="js-menu">Классический</li>
+          <li data-style="kantri" class="js-menu">Кантри</li>
+          <li data-style="provans" class="js-menu">Прованс</li>
+          <li data-style="english" class="js-menu">Английский</li>
+          <li data-style="modern" class="js-menu">Модерн</li>
+        </ul>
+      </div>
+      <div class="kitchen-style__info">
+        <div class="kitchen-style__slider kitchen-style--klassika">
+          <div class="kitchen-style__slider-item"><img src="img/style-1.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-2.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-3.jpg" alt=""/></div>
+        </div>
+        <div class="kitchen-style__slider kitchen-style--kantri">
+          <div class="kitchen-style__slider-item"><img src="img/style-3.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-2.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-1.jpg" alt=""/></div>
+        </div>
+        <div class="kitchen-style__slider kitchen-style--provans">
+          <div class="kitchen-style__slider-item"><img src="img/style-2.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-3.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-1.jpg" alt=""/></div>
+        </div>
+        <div class="kitchen-style__slider kitchen-style--english">
+          <div class="kitchen-style__slider-item"><img src="img/style-3.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-2.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-1.jpg" alt=""/></div>
+        </div>
+        <div class="kitchen-style__slider kitchen-style--modern">
+          <div class="kitchen-style__slider-item"><img src="img/style-3.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-2.jpg" alt=""/></div>
+          <div class="kitchen-style__slider-item"><img src="img/style-1.jpg" alt=""/></div>
+        </div>
+      </div>
+    </div>
+    <div class="kitchen-service kitchen-service--price">
+      <div class="wrapper"> 
+        <div class="kitchen-service__txt">
+          <h3>Хотите узнать точную цену?</h3>
+          <p>Позвоните нам или оставьте свой номер телефона. Наш консультант свяжется с вами в ближайшее время и в сжатые сроки предоставит информацию по стоимости интересующей вас мебели</p>
+          <form action="/">
+            <input type="text" name="phone" placeholder="+7(___) ___ __ __" class="inp-order inp-phone"/>
+            <button type="submit" class="subm-order">Узнать цену</button>
+          </form>
+        </div>
+        <div class="kitchen-service__phone">
+          <div class="kitchen-service__phone-border"><span class="phone">8(812)-612-41-38</span><span class="consultant">Наш консультант Алексей</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="kitchen-modern">
+      <div class="kitchen-modern__item">
+        <div class="kitchen-modern__header">
+          <p>Глянцевые кухонные фасады</p>
+        </div>
+        <div class="kitchen-modern__txt">
+          <h3>Современные кухни</h3>
+          <p>Кухни, выполненные в современном стиле, не менее востребованы, чем классические кухни. Современный дизайн — это простота и изящество линий, минимализм и максимальная функциональность, эргономичность и удобство. И по-прежнему тон задают фасады. Основой под фасады для таких кухонь служат:</p>
+        </div><img src="img/modern-1.jpg" alt=""/>
+      </div>
+      <div class="kitchen-modern__item">
+        <div class="kitchen-modern__header">
+          <p>Матовые кухонные фасады</p>
+        </div>
+        <div class="kitchen-modern__txt">
+          <h3>Современные кухни</h3>
+          <p>Кухни, выполненные в современном стиле, не менее востребованы, чем классические кухни. Современный дизайн — это простота и изящество линий, минимализм и максимальная функциональность, эргономичность и удобство. И по-прежнему тон задают фасады. Основой под фасады для таких кухонь служат:</p>
+        </div><img src="img/modern-2.jpg" alt=""/>
+      </div>
+      <div class="kitchen-modern__item">
+        <div class="kitchen-modern__header">
+          <p>Глянцевые кухонные фасады</p>
+        </div>
+        <div class="kitchen-modern__txt">
+          <h3>Современные кухни</h3>
+          <p>Кухни, выполненные в современном стиле, не менее востребованы, чем классические кухни. Современный дизайн — это простота и изящество линий, минимализм и максимальная функциональность, эргономичность и удобство. И по-прежнему тон задают фасады. Основой под фасады для таких кухонь служат:</p>
+        </div><img src="img/modern-3.jpg" alt=""/>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="kitchen-face">
+        <div class="kitchen-face__item">
+          <div class="kitchen-face__descr">
+            <h3>Фасады из ДСП</h3>
+            <p>Фасады из ДСП - самый бюджетный вариант, часто используются при изготовлении фасадов для офисных кухонь. Они быстро изготавливаются и устанавливаются, их поверхность устойчива к деформации, влаге, легко поддается чистке практически любыми моющими средствами. </p>
+            <p> <i>К недостаткам этого материала можно отнести исключительно ровные поверхности, не поддающиеся формовке и фрезеровке  из-за своей крупноволокнистой структуры.</i></p>
+          </div>
+          <div class="kitchen-face__img"><img src="img/face-3.jpg" alt=""/></div>
+        </div>
+        <div class="kitchen-face__item">
+          <div class="kitchen-face__img"><img src="img/face-4.jpg" alt=""/></div>
+          <div class="kitchen-face__descr">
+            <h3>Фасады из МДФ бывают двух видов</h3>
+            <h4>Глянцевые кухонные фасады</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ. На основу с помощью современных технологий наносятся акриловые красители с последующей полировкой и лаки либо высокоглянцевае пленки. Такие фасадные полотна отличаются большой гаммой различных цветов и оттенков и разными эффектами окраски.</p>
+          </div>
+        </div>
+        <div class="kitchen-face__item">
+          <div class="kitchen-face__descr">
+            <h4>Облицованные пленкой ПВХ или пластиком</h4>
+            <p>Фасады из  МДФ  облицованы ламинированной пленкой ПВХ или  пластиком. Пластик к тому же не требует специального ухода, устойчив к истиранию, царапинам, к воздействию различных бытовых химических веществ, а также высоких температур.</p>
+          </div>
+          <div class="kitchen-face__img"><img src="img/face-5.jpg" alt=""/></div>
+        </div>
+      </div>
+    </div>
+    <div class="kitchen-detail">
+      <h2>Ваша кухня в деталях</h2>
+      <div class="kitchen-detail__list"><span data-info="furnitura" class="kitchen-detail__item kitchen-detail--furnitura js-detail">Фурнитура</span><span data-info="kreplenia" class="kitchen-detail__item kitchen-detail--kreplenia js-detail">Крепления</span><span data-info="podsvetka" class="kitchen-detail__item kitchen-detail--podsvetka js-detail">Подсветка</span><span data-info="reiling" class="kitchen-detail__item kitchen-detail--reiling js-detail">Рейлинг крепления</span><span data-info="rakoviny" class="kitchen-detail__item kitchen-detail--rakoviny js-detail">Раковины</span><span data-info="razdvizhnye" class="kitchen-detail__item kitchen-detail--razdvizhnye js-detail">Раздвижные конструкции</span><span data-info="vydvizhnye" class="kitchen-detail__item kitchen-detail--vydvizhnye js-detail">Выдвижные ящики</span><span data-info="vytiazhki" class="kitchen-detail__item kitchen-detail--vytiazhki js-detail">Вытяжки</span><span data-info="rabochie" class="kitchen-detail__item kitchen-detail--rabochie js-detail">Рабочие поверхности</span><span data-info="duhovki" class="kitchen-detail__item kitchen-detail--duhovki js-detail">Духовки</span><span data-info="vydvizhnye-kreplenia" class="kitchen-detail__item kitchen-detail--vydvizhnye-kreplenia js-detail">Выдвижные крепления</span><span data-info="yashiki" class="kitchen-detail__item kitchen-detail--yashiki js-detail">Доп.ящики</span></div>
+      <div class="kitchen-detail__info">
+        <div class="kitchen-detail__close js-close"></div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-furnitura"><img src="img/detail-furnitura.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Функциональность</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-kreplenia"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Крепления</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-podsvetka"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Подсветка</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-reiling"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Рейлинг</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-rakoviny"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Раковины</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-razdvizhnye"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Раздвижные</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-vydvizhnye"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Выдвижные</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-vytiazhki"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Вытяжки</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-rabochie"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Рабочие</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-duhovki"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Духовки</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-vydvizhnye-kreplenia"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Выдвижные крепления</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+        <div class="kitchen-detail__info-item kitchen-detail--info-yashiki"><img src="img/detail-kreplenia.jpg" alt=""/>
+          <div class="kitchen-detail__txt">
+            <h4>Ящики</h4>
+            <p>Огромной популярностью сегодня пользуются эмалевые фасады, основу которых, как правило, составляет МДФ.</p>
+          </div>
+        </div>
+      </div>
+      <div class="kitchen-detail__img"></div>
+    </div>
+    <div class="wrapper">
+      <div class="kitchen-material">
+        <h2>Материалы для кухни</h2>
+        <div class="kitchen-material__list">
+          <div class="kitchen-material__item kitchen-material--1">
+            <div class="kitchen-material__header">
+              <h3>Корпус ЛДСП</h3>
+              <p>от 3 000 руб.</p>
+            </div>
+          </div>
+          <div class="kitchen-material__item kitchen-material--2">
+            <div class="kitchen-material__header">
+              <h3>Фасады МДФ цельные и рамочные</h3>
+              <p>от 2 000 руб.</p>
+            </div>
+          </div>
+          <div class="kitchen-material__item kitchen-material--3">
+            <ul class="kitchen-material__info">
+              <li>— Стекло (матовое, прозрачное, цветное, фотопечать)</li>
+              <li>— Высокоглянцевые панели на основе МДФ</li>
+              <li>— Зеркало (серебро, бронза, художественное матирование)	</li>
+              <li>— Алюминиевые рамочные профили для раздвижных фасадов</li>
+            </ul>
+            <div class="kitchen-material__header">
+              <h3>Вставки в рамочные фасады и профили</h3>
+              <p>от 1 000 руб.</p>
+            </div>
+          </div>
+          <div class="kitchen-material__item kitchen-material--4">
+            <div class="kitchen-material__header">
+              <h3>Кромка</h3>
+              <p>от 1 000 руб.</p>
+            </div>
+          </div>
+          <div class="kitchen-material__item kitchen-material--5">
+            <div class="kitchen-material__header">
+              <h3>Фурнитура</h3>
+              <p>от 500 руб.				</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kitchen-economy">
+      <div class="wrapper">
+        <h2>Наши возможности для Вашей экономии:</h2>
+        <div class="kitchen-economy__list"> 
+          <div class="kitchen-economy__item"><span class="price-1">до</span><span class="price-2">30%</span><span class="price-3">дешевле</span>
+            <p><i>За счет: Собственной фабрики мебели и производства фурнитуры</i></p>
+          </div>
+          <div class="kitchen-economy__item">
+            <h4>Собственная фабрика:</h4>
+            <ul>
+              <li><span>Евро-оборудование</span>Стандарты DIN, EN, ISO</li>
+              <li> <span>Все виды материалов</span>Работа с эконом. и премиум материалами</li>
+              <li> <span>Фурнитура на выбор</span>Сделам мебель под конкретные задачи</li>
+            </ul>
+          </div>
+          <div class="kitchen-economy__item">
+            <h4>Сделаем точную копию мебели:</h4>
+            <p> <a href="">Пришлите нам фото или ссылку</a> и мы сделаем точно такую же мебель, но гораздо дешевле</p>
+            <button>Не верю, докажите!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kitchen-service kitchen-service--service">
+      <div class="wrapper">
+        <div class="kitchen-service__txt">
+          <h3>Закажите услугу выезда специалиста на дом</h3>
+          <p>Он разработает индивидуальный проект, впишет его в интерьер, предоставит смету. </p>
+          <form action="/">
+            <input type="text" name="phone" placeholder="+7(___) ___ __ __" class="inp-order inp-phone"/>
+            <button type="submit" class="subm-order">Узнать цену</button>
+          </form>
+        </div>
+        <div class="kitchen-service__phone">
+          <div class="kitchen-service__phone-border"><span class="phone">8(812)-612-41-38</span><span class="consultant">Дизайнер-конструктор Алексей</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="kitchen-footer">
+      <div class="wrapper">
+        <div class="kitchen-footer__info">
+          <div class="kitchen-footer__logo"><img src="img/logo-footer.png" alt=""/></div>
+          <div class="kitchen-footer__phone"><span class="phone">8 812 23-34-43</span><span class="call-us">Позвоните нам бесплатно!</span></div>
+          <div class="kitchen-footer__txt"> 
+            <p>Предоставленная на сайте информация является собственностью «Таурус мебель» холдинга «Таурус» Любое использование материалов без одобрения администрации - запрещено.</p>
+          </div>
+        </div>
+        <div class="kitchen-footer__copyright">
+          <p>1994-2016 &copy; Бренд пренадлежит холдингу «ТАУРУС» Санкт-Петербург</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
