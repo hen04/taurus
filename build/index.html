@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css"/>
     <link rel="stylesheet" href="css/taurus.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
     <script src="js/taurus.js"></script>
   </head>
   <body>
@@ -25,7 +27,7 @@
             <li><a href="">Сборка и доставка</a></li>
           </ul>
         </div>
-        <div class="header-phone"><span class="phone">8 812 23-34-43</span><span class="call-us">Позвоните нам бесплатно!</span></div>
+        <div class="header-phone"><span class="phone">8 812 23-34-43</span><span class="call-us js-modal">Позвоните нам бесплатно!</span></div>
       </div>
       <div class="wrapper kitchen-first__descr">
         <h1>Кухни по индивидуальным размерам</h1>
@@ -37,7 +39,7 @@
         </form>
       </div>
     </div>
-    <div class="wrapper kitchen-info">
+    <div class="kitchen-info">
       <div class="kitchen-info__item kitchen-info--1">Профессиональные монтажники с опытом работы от 5 лет</div>
       <div class="kitchen-info__item kitchen-info--2">Работаем на современном оборудовании</div>
       <div class="kitchen-info__item kitchen-info--3">Проектируем профессионально</div>
@@ -330,8 +332,8 @@
           </div>
           <div class="kitchen-economy__item">
             <h4>Сделаем точную копию мебели:</h4>
-            <p> <a href="">Пришлите нам фото или ссылку</a> и мы сделаем точно такую же мебель, но гораздо дешевле</p>
-            <button>Не верю, докажите!</button>
+            <p> <a href="#" class="js-modal">Пришлите нам фото или ссылку</a> и мы сделаем точно такую же мебель, но гораздо дешевле</p>
+            <button class="js-modal">Не верю, докажите!</button>
           </div>
         </div>
       </div>
@@ -355,7 +357,7 @@
       <div class="wrapper">
         <div class="kitchen-footer__info">
           <div class="kitchen-footer__logo"><img src="img/logo-footer.png" alt=""/></div>
-          <div class="kitchen-footer__phone"><span class="phone">8 812 23-34-43</span><span class="call-us">Позвоните нам бесплатно!</span></div>
+          <div class="kitchen-footer__phone"><span class="phone">8 812 23-34-43</span><span class="call-us js-modal">Позвоните нам бесплатно!</span></div>
           <div class="kitchen-footer__txt"> 
             <p>Предоставленная на сайте информация является собственностью «Таурус мебель» холдинга «Таурус» Любое использование материалов без одобрения администрации - запрещено.</p>
           </div>
@@ -366,4 +368,13 @@
       </div>
     </div>
   </body>
+  <div class="hidden">
+    <div class="box-modal">
+      <form action="/">
+        <input type="text" name="name" placeholder="Ваше имя" class="inp-order inp-name"/>
+        <input type="text" name="phone" placeholder="+7(___) ___ __ __" class="inp-order inp-phone"/>
+        <button type="submit" class="subm-order">Отправить</button>
+      </form>
+    </div>
+  </div>
 </html>

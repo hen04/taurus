@@ -286,6 +286,8 @@ a {
 }
 
 .kitchen-info {
+  max-width: 1349px;
+  margin: 0 auto;
   min-height: 245px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1437,6 +1439,7 @@ a {
   padding: 10px 24px;
   white-space: nowrap;
   outline: 0;
+  cursor: pointer;
 }
 
 .kitchen-economy__item .price-1 {
@@ -1574,4 +1577,8 @@ a {
   border-top: 1px solid #d9d9d9;
   font-size: 11px;
   font-weight: 300;
+}
+
+.hidden {
+  display: none;
 }
